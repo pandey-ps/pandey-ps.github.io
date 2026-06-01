@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant Pandey</title>
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-55N7G54DM5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -20,46 +13,111 @@
         gtag('js', new Date());
         gtag('config', 'G-55N7G54DM5');
     </script>
-
-    <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
 
-    <h1>Prashant Pandey</h1>
+    <main class="home-layout">
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/work/">Work</a>
-        <a href="/research/">Research</a>
-        <a href="/contact/">Contact</a>
-    </nav>
+        <section class="intro-section">
 
-    <hr>
+            <h3>prashant pandey</h3>
+            (or <i>prasheus</i> - not a greek god)
+            <p>
+                i am a cs grad working on inference optimizations and computational biology.<br><br>
+                currently i am working as a<br>
+                - research intern at the dm lab, iit bombay (pre-training pan cancer models)
+                <br>
+                <br>
+                socials: <a href="https://github.com/prashantpandeygit" target="_blank">github</a> | <a
+                    href="https://www.linkedin.com/in/pandeyps/" target="_blank">linkedin</a> | <a
+                    href="https://discord.com/users/906940625381908500" target="_blank">discord</a> | <a
+                    href="https://huggingface.co/parkneurals" target="_blank">hugging face</a> | <a
+                    href="https://open.spotify.com/user/fik4hh6zpi7eed4uet0ks8uq7" target="_blank">spotify</a>
+                <br>
+                contact: <i>prashantpandey.acad</i> [at] <i>gmail.com</i>
+            </p>
+        </section>
 
-    <p>Hi, I am Prashant Pandey (प्रशांत पाण्डेय), I work with inference optimizations, inference engines,
-        and
-        compute kernels; lately
-        been working with lot of open source projects, trying to transition into the biology side of data.</p>
+        <section class="work">
+            <article class="section-card">
+                <h3>work</h3>
+                <p>
+                    1. <a href="https://github.com/prashantpandeygit/dViT" target="_blank">dvit</a>: that is 2.27 times
+                    faster than
+                    the
+                    standard vision transformer, adapts resolution at inference to switch between high and low
+                    resolution, trained on the cifar-10 dataset; no changes to be made in training and
+                    architecture.<br><br>
+                    2. <a href="https://github.com/rictrlab/rictr" target="_blank">rictr</a>: knowledge distillation
+                    library
+                    for
+                    pytorch based on the papers:
+                    <a href="https://arxiv.org/abs/1503.02531" target="_blank">distilling knowledge in a neural
+                        network</a>, <a href="https://arxiv.org/abs/1612.03928" target="_blank">paying more attention to
+                        attention: improving the
+                        performance of cnn via attention transfer</a> and hidden state distillation; trying to reach
+                    on
+                    par with
+                    state of the art.<br><br>
+                    3. <a href="https://github.com/prashantpandeygit/solvingpapers/" target="_blank">paper
+                        replications</a>: from
+                    scratch in pytorch,
+                    implemented autoencoders, knowledge distillation , vision transformer, activation functions, and
+                    presently on the complete deepseekv3 architecture.<br><br>
+                    4. <a href="https://github.com/prashantpandeygit/raytracer" target="_blank">raytracer</a>: that i
+                    built to learn
+                    the
+                    math
+                    behind it; in just 99 lines of python, a cpu first ray tracer without acceleration that can
+                    render
+                    3d models using triangle intersection and shading, resource used to build it is the <a
+                        href="https://raytracing.github.io/books/RayTracingInOneWeekend.html" target="_blank">ray
+                        tracing in
+                        one weekend</a> book.<br><br>
+                    5. <a href="https://github.com/prashantpandeygit/tcpu" target="_blank">tinycpu</a>: through <a
+                        href="https://github.com/prashantpandeygit/verilog" target="_blank">my verilog circuit
+                        implementations</a>, built the multistage 32 bit risc-v processor compiled (iverilog) and
+                    waveformed
+                    (gtkwave); has sub units for every module and an integrated unit for the processor with
+                    testbench.
+                    <br>
+                </p>
+            </article>
 
-    <p>Giving out research solutions and a continuously updating and maintained Knowledge
-        Distillation library and command line tools which runs on grants from multiple organizations.
-        checkout: <a href="https://github.com/rictrlab" target="_blank">@rictrlab</a></p>
+        </section>
 
-    <p>Currently working as a research intern at the DM Lab, IIT Bombay on training pan cancer deep learning models.
-    </p>
+        <section class="research">
+            <article class="section-card">
+                <h3>research</h3>
+                <p>
+                    1. [dec 2025] <a href="https://arxiv.org/abs/2512.11851" target="_blank">kv cache recycling to
+                        expand usable context
+                        capacity
+                        in low parameter llms</a> (published in the ijrsi winter journal 2025)<br>
+                </p>
+            </article>
 
-    <h2>Recent Posts</h2>
-    <ul>
-        <li>Mar 30, 2026 - <a href="https://prashantpandey.hashnode.dev/building-llms-from-scratch"
-                target="_blank">Building LLMs from Scratch</a></li>
-        <li>Feb 28, 2026 - <a href="https://prashantpandey.hashnode.dev/raytracer" target="_blank">Ray Tracer in 99
-                Lines of Python</a></li>
-        <li>Jan 10, 2026 - <a
-                href="https://prashantpandey.hashnode.dev/dynamic-resolution-vision-transformer-faster-inference-without-extra-training"
-                target="_blank">Dynamic Vision Transformer: Faster Inference</a></li>
-    </ul>
+            <article class="section-card">
+                <h3>recent blogs</h3>
+                <p>
+                    1. [mar 2026] <a href="https://prashantpandey.hashnode.dev/building-llms-from-scratch"
+                        target="_blank">building llms from scratch</a><br>
+                    2. [feb 2026] <a href="https://prashantpandey.hashnode.dev/raytracer" target="_blank">ray tracer in
+                        99 lines of python</a><br>
+                    <a href="https://prashantpandey.hashnode.dev/" target="_blank">read more</a>
+                </p>
+            </article>
+        </section>
+
+        <section class="meta-section">
+            <p>
+                [+] last updated: may 31, 2026
+            </p>
+        </section>
+
+    </main>
+
 </body>
 
 </html>
