@@ -31,17 +31,8 @@ body {
 }
 
 .site-nav {
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(252, 252, 252, 0.95);
-    backdrop-filter: blur(8px);
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
+    margin-bottom: 1.5rem;
     font-weight: 500;
-    white-space: nowrap;
-    z-index: 1000;
 }
 
 .work,
