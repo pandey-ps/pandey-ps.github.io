@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prashant Pandey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="81d7a513-7f71-472b-bca0-ce3fcea51f67"></script>
+</head>
+
+<body>
+    <main class="home-layout">
+        <p class="site-nav">
+            <a href="/index.html">home</a> | <a href="/work.html">work</a> | <a href="/res.html">research</a> | <a
+                href="/blog.html">blog</a>
+        </p>
+
+        <article class="section-card blog-post-content">
+            <h2 style="font-weight: 700; margin-bottom: 0.25rem;">{{ page.title }}</h2>
+            <p style="font-style: italic; color: #666666; margin-bottom: 1.5rem;">{{ page.date | date: "%b %d, %Y" }}</p>
+            {{ content }}
+        </article>
+    </main>
+</body>
+
+</html>

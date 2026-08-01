@@ -1,0 +1,5 @@
+title: Prashant Pandey
+permalink: /blog/:title/
+markdown: kramdown
+theme: null
+
