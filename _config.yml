@@ -3,4 +3,5 @@ permalink: /blog/:title/
 markdown: kramdown
 theme: null
 url: "https://pandeyps.in"
+timezone: Asia/Kolkata
 
