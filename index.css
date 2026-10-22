@@ -40,7 +40,7 @@ body {
 }
 
 .work,
-.research {
+.blog-list {
     display: grid;
     gap: 1rem;
 }
